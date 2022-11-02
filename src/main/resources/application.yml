@@ -1,0 +1,18 @@
+spring:
+  security:
+    user:
+      password: admin
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.springframework.security: DEBUG
+
+jwt:
+  private.key: classpath:app.key
+  public.key: classpath:app.pub
+
